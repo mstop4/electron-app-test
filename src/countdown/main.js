@@ -6,7 +6,7 @@ const BrowserWindow = electron.BrowserWindow;
 const ipc = electron.ipcMain;
 
 app.on('ready', () => {
-  const mainWindow = new BrowserWindow({
+  let mainWindow = new BrowserWindow({
     height: 400,
     width: 400
   });
